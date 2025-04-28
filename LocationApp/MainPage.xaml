@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocationApp.MainPage">
+    <Grid Padding="0" RowDefinitions="*, Auto" ColumnDefinitions="*">
+        <!-- Фоновое изображение -->
+        <Image Grid.Row="0" Grid.RowSpan="2" Aspect="Fill" Source="font.jpg" />
+
+        <!-- Контейнер для кнопок (центрированный) -->
+        <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Spacing="15">
+            <Button Text="Get Location" Clicked="OnGetLocationClicked" />
+            <Button Text="Start Auto Update" Clicked="OnStartAutoUpdateClicked" />
+            <Button Text="Stop Auto Update" Clicked="OnStopAutoUpdateClicked" IsEnabled="False" x:Name="StopAutoUpdateButton" />
+        </StackLayout>
+
+        <!-- Контейнер для текста (снизу) -->
+        <StackLayout Grid.Row="1" 
+                     VerticalOptions="End" 
+                     HorizontalOptions="Center" 
+                     Spacing="10" 
+                     Margin="0, 0, 0, 20">
+            <!-- Добавлен отступ снизу -->
+            <Label x:Name="LatitudeLabel" Text="Latitude: " FontSize="Large" TextColor="White" />
+            <Label x:Name="LongitudeLabel" Text="Longitude: " FontSize="Large" TextColor="White" />
+            <Label x:Name="ErrorLabel" TextColor="Red" FontSize="Medium" />
+            <Label x:Name="GpsStatusLabel" Text="GPS Status: Unknown" FontSize="Small" TextColor="White" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

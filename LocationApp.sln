@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationApp.Android", "LocationApp.Android\LocationApp.Android.csproj", "{63D081C4-C1A1-4939-9883-0082D9405FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationApp.iOS", "LocationApp.iOS\LocationApp.iOS.csproj", "{190CC811-605C-448C-B932-10FB771F8EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationApp", "LocationApp\LocationApp.csproj", "{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63D081C4-C1A1-4939-9883-0082D9405FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D081C4-C1A1-4939-9883-0082D9405FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D081C4-C1A1-4939-9883-0082D9405FA3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{63D081C4-C1A1-4939-9883-0082D9405FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D081C4-C1A1-4939-9883-0082D9405FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D081C4-C1A1-4939-9883-0082D9405FA3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{190CC811-605C-448C-B932-10FB771F8EA8}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{190CC811-605C-448C-B932-10FB771F8EA8}.Debug|Any CPU.Build.0 = Debug|iPhone
+		{190CC811-605C-448C-B932-10FB771F8EA8}.Debug|Any CPU.Deploy.0 = Debug|iPhone
+		{190CC811-605C-448C-B932-10FB771F8EA8}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{190CC811-605C-448C-B932-10FB771F8EA8}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{190CC811-605C-448C-B932-10FB771F8EA8}.Release|Any CPU.Deploy.0 = Release|iPhoneSimulator
+		{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0324EF69-2F46-4C46-ABE1-C54E9AE2C885}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F1F5EB-71E8-4BC3-9752-6B7BF3CAAFB9}
+	EndGlobalSection
+EndGlobal
