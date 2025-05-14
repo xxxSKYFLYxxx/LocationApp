@@ -55,30 +55,8 @@ namespace LocationApp
                 LatitudeLabel.Text = "Latitude: N/A";
                 LongitudeLabel.Text = "Longitude: N/A";
                 ErrorLabel.Text = "An unexpected error occurred.";
-                GpsStatusLabel.Text = "GPS Status: Error";
             }
         }
-
-        /// Начинает автоматическое обновление координат.
-        private async void OnStartAutoUpdateClicked(object sender, EventArgs e)
-        {
-            StopAutoUpdateButton.IsEnabled = true;
-            _cancellationTokenSource = new CancellationTokenSource();
-
-            while (!_cancellationTokenSource.Token.IsCancellationRequested)
-            {
-                await UpdateLocationAsync();
-                await Task.Delay(5000); // Обновляем каждые 5 секунд
-            }
-        }
-
-        /// Останавливает автоматическое обновление координат.
-        private void OnStopAutoUpdateClicked(object sender, EventArgs e)
-        {
-            _cancellationTokenSource?.Cancel();
-            StopAutoUpdateButton.IsEnabled = false;
-        }
-
         public override bool Equals(object obj)
         {
             return base.Equals(obj);
